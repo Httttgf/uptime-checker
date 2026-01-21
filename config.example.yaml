@@ -1,0 +1,22 @@
+# Uptime Checker Configuration
+# Configure your sites to monitor here
+
+# Default timeout for all sites (in seconds)
+default_timeout: 10
+
+# Sites to monitor
+sites:
+  # Simple format - just the URL
+  - https://www.google.com
+  - https://www.github.com
+  
+  # Detailed format with custom settings
+  - url: https://api.example.com/health
+    name: "Example API"
+    timeout: 5
+    expected_status: 200
+    
+  - url: https://myapp.example.com
+    name: "My Application"
+    timeout: 15
+    expected_status: 200
